@@ -11,12 +11,12 @@ font-family: 'Edu VIC WA NT Beginner', cursive;
  }
 
  :root {
-    --background-color: #000000;
-    --foreground-color: #ffffff;
-    --pink-dark-color: #ff1493;
-    --cyan-dark-color: #31dddd;
-    --neon-text-color: #f40;
-    --neon-border-color: #08f;
+     --background-color: #000000;
+     --foreground-color: #ffffff;
+     --pink-dark-color: #ff1493;
+     --cyan-dark-color: #31dddd;
+     --neon-text-color: #f40;
+     --neon-border-color: #08f;
  }
 
  body {
@@ -31,12 +31,16 @@ font-family: 'Edu VIC WA NT Beginner', cursive;
      text-align: center;
  }
 
- .l-logo{
-    font-weight: 700;
-    text-decoration: underline;
-    color: var(--pink-dark-color);
-    cursor: pointer;
-    text-shadow: 0 0 7px var(--pink-dark-color), 0 0 10px var(--pink-dark-color), 0 0 21px var(--pink-dark-color), 0 0 42px var(--pink-dark-color), 0 0 82px var(--pink-dark-color), 0 0 92px var(--pink-dark-color), 0 0 102px var(--pink-dark-color), 0 0 151px var(--pink-dark-color), 0 0 186px var(--pink-dark-color), 0 0 202px var(--pink-dark-color), 0 0 251px var(--pink-dark-color), 0 0 291px var(--pink-dark-color);
+
+ a {
+     color: var(--neon-border-color);
+ }
+
+ .l-logo {
+     font-weight: 700;
+     text-decoration: underline;
+     color: var(--pink-dark-color);
+     cursor: pointer;
  }
 
  main {
@@ -111,13 +115,58 @@ font-family: 'Edu VIC WA NT Beginner', cursive;
  .tabcontent {
      display: block;
      padding: 3rem;
-     border: 2px solid var(--pink-dark-color);
-     box-shadow: 2px 2x cyan;
      width: 86%;
      height: 85vh;
  }
 
 
+ .container{
+    border: 2px solid var(--pink-dark-color);
+    box-shadow: 2px 2x var(--cyan-dark-color);
+ }
+
+
  footer {
      text-align: center;
+     color: var(--pink-dark-color);
+ }
+
+ footer p span{
+    color: var(--neon-border-color);
+ }
+
+
+ @media only screen and (max-width: 768px) {
+    body{
+        width: 100%;
+        margin: auto 10px;
+    }
+    h1{
+        display: none;
+    }
+    main{
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .tab{
+        display: flex;
+        width: 100%;
+        margin: auto;
+        border: none;
+        box-shadow: none;
+        padding: 12px;
+    }
+    .tabcontent{
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .container{
+        width: 100%;
+        margin: auto;
+        height: 100vh;
+    }
+
  }
